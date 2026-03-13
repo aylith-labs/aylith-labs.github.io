@@ -18,8 +18,8 @@
 <nav class="sticky top-0 z-50 border-b border-surface-200/50 bg-white/80 backdrop-blur-xl dark:border-surface-800/50 dark:bg-surface-950/80">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex h-16 items-center justify-between">
-			<a href="/" class="flex items-center gap-2.5">
-				<div class="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent-500 to-accent-700 text-sm font-bold text-white">
+			<a href="/" class="group flex items-center gap-2.5">
+				<div class="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent-500 to-accent-700 text-sm font-bold text-white transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110">
 					A
 				</div>
 				<span class="text-lg font-bold tracking-tight text-surface-900 dark:text-white">
