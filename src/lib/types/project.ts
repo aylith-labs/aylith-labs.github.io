@@ -16,9 +16,10 @@ export type Project = {
 	description: string;
 	category: ProjectCategory;
 	status: ProjectStatus;
-	icon: string;
+	iconPath: string;
 	gradientFrom: string;
 	gradientTo: string;
+	featured: boolean;
 	features: string[];
 	targetUser: string;
 	body?: string;

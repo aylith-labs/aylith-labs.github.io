@@ -22,7 +22,7 @@
 				<div class="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent-500 to-accent-700 text-sm font-bold text-white transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110">
 					A
 				</div>
-				<span class="text-lg font-bold tracking-tight text-surface-900 dark:text-white">
+				<span class="text-lg font-bold tracking-tight text-surface-900 dark:text-warm-50">
 					Aylith
 				</span>
 			</a>
