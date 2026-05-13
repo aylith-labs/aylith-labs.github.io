@@ -13,7 +13,7 @@
 			'background: linear-gradient(135deg, #7c3aed, #8b5cf6); color: white; font-size: 24px; font-weight: bold; padding: 8px 16px; border-radius: 8px;'
 		);
 		console.log(
-			'%cAI Product Studio — 10 products, 0 bullshit.\n%cCurious? https://github.com/aylith-apps',
+			'%cAI Product Studio — 10 products, 0 bullshit.\n%cCurious? https://github.com/aylith-labs',
 			'color: #8b5cf6; font-size: 14px; font-weight: 600;',
 			'color: #64748b; font-size: 12px;'
 		);

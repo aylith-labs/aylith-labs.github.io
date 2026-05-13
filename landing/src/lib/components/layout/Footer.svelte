@@ -39,7 +39,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="https://github.com/aylith-apps" class="text-sm text-surface-600 transition-colors hover:text-accent-600 dark:text-warm-300 dark:hover:text-accent-400">
+						<a href="https://github.com/aylith-labs" class="text-sm text-surface-600 transition-colors hover:text-accent-600 dark:text-warm-300 dark:hover:text-accent-400">
 							GitHub
 						</a>
 					</li>
