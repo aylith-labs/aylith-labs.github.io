@@ -1,8 +1,10 @@
 node_modules
-build
-.svelte-kit
+landing/node_modules
+landing/build
+landing/.svelte-kit
+landing/package
 .env
 .env.*
 !.env.example
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+landing/vite.config.js.timestamp-*
+landing/vite.config.ts.timestamp-*
