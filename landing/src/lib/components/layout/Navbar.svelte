@@ -18,11 +18,15 @@
 <nav class="sticky top-0 z-50 border-b border-surface-200/50 bg-white/80 backdrop-blur-xl dark:border-surface-800/50 dark:bg-surface-950/80">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex h-16 items-center justify-between">
-			<a href="/" class="group flex items-center gap-2.5">
-				<div class="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent-500 to-accent-700 text-sm font-bold text-white transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110">
-					A
-				</div>
-				<span class="text-lg font-bold tracking-tight text-surface-900 dark:text-warm-50">
+			<a href="/" class="flex items-center gap-2.5 text-surface-900 dark:text-warm-50" aria-label="Aylith — home">
+				<svg viewBox="0 0 64 64" class="size-[22px] shrink-0" stroke="currentColor" stroke-width="5" stroke-linecap="square" fill="none" aria-hidden="true">
+					<line x1="14" y1="14" x2="14" y2="50"/>
+					<line x1="22" y1="14" x2="22" y2="50"/>
+					<line x1="30" y1="14" x2="30" y2="50"/>
+					<line x1="38" y1="14" x2="38" y2="50"/>
+					<line x1="10" y1="50" x2="44" y2="14" class="stroke-accent-500"/>
+				</svg>
+				<span class="font-(family-name:--font-wordmark) text-[19px] font-medium leading-none tracking-[-0.01em]">
 					Aylith
 				</span>
 			</a>

@@ -10,12 +10,12 @@
 		// Console easter egg
 		console.log(
 			'%c Aylith ',
-			'background: linear-gradient(135deg, #7c3aed, #8b5cf6); color: white; font-size: 24px; font-weight: bold; padding: 8px 16px; border-radius: 8px;'
+			'background: #1c1a16; color: #f8f7f4; font-family: Newsreader, serif; font-size: 24px; font-weight: 500; padding: 8px 16px; letter-spacing: -0.01em;'
 		);
 		console.log(
-			'%cAI Product Studio — 10 products, 0 bullshit.\n%cCurious? https://github.com/aylith-labs',
-			'color: #8b5cf6; font-size: 14px; font-weight: 600;',
-			'color: #64748b; font-size: 12px;'
+			'%cA lab that turns demand signals into shipped AI tools.\n%cgithub.com/aylith-labs',
+			'color: #c97a3a; font-size: 13px; font-weight: 500;',
+			'color: #908970; font-size: 12px;'
 		);
 
 		// Konami code: up up down down left right left right b a
@@ -43,7 +43,7 @@
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </svelte:head>
 
 <div class="flex min-h-screen flex-col">

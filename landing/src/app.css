@@ -4,36 +4,39 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-	/* Light: subtle violet tint */
-	--color-surface-50: #f8f7fc;
-	--color-surface-100: #f0eef8;
-	--color-surface-200: #e0ddef;
-	--color-surface-300: #c9c5de;
-	--color-surface-400: #908ba8;
-	--color-surface-500: #615c78;
-	--color-surface-600: #46425a;
-	--color-surface-700: #332f48;
-	/* Dark: warm charcoal, not purple */
-	--color-surface-800: #1c1b22;
-	--color-surface-900: #121118;
-	--color-surface-950: #0a090e;
+	/* Surfaces: warm neutrals, no violet tint */
+	--color-surface-50: #f8f7f4;
+	--color-surface-100: #f0eee9;
+	--color-surface-200: #e1ddd3;
+	--color-surface-300: #c9c3b3;
+	--color-surface-400: #90897a;
+	--color-surface-500: #615b50;
+	--color-surface-600: #46423a;
+	--color-surface-700: #332f29;
+	--color-surface-800: #1c1a16;
+	--color-surface-900: #131110;
+	--color-surface-950: #0a0907;
 
-	--color-accent-50: #f5f3ff;
-	--color-accent-100: #ede9fe;
-	--color-accent-200: #ddd6fe;
-	--color-accent-300: #c4b5fd;
-	--color-accent-400: #a78bfa;
-	--color-accent-500: #8b5cf6;
-	--color-accent-600: #7c3aed;
-	--color-accent-700: #6d28d9;
-	--color-accent-800: #5b21b6;
-	--color-accent-900: #4c1d95;
+	/* Accent: copper ramp, base oklch(0.66 0.13 50) */
+	--color-accent-50: oklch(0.97 0.015 50);
+	--color-accent-100: oklch(0.94 0.030 50);
+	--color-accent-200: oklch(0.88 0.060 50);
+	--color-accent-300: oklch(0.80 0.090 50);
+	--color-accent-400: oklch(0.73 0.115 50);
+	--color-accent-500: oklch(0.66 0.13 50);
+	--color-accent-600: oklch(0.56 0.13 50);
+	--color-accent-700: oklch(0.46 0.115 50);
+	--color-accent-800: oklch(0.36 0.090 50);
+	--color-accent-900: oklch(0.28 0.070 50);
 
 	--color-warm-50: #faf8f5;
 	--color-warm-100: #f3efe8;
 	--color-warm-200: #e8e0d4;
 	--color-warm-300: #d4c8b8;
 	--color-warm-400: #b0a08a;
+
+	/* Brand wordmark face */
+	--font-wordmark: 'Newsreader', 'Iowan Old Style', Georgia, serif;
 }
 
 html {
@@ -91,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 	bottom: 12px;
 	width: 3px;
 	border-radius: 2px;
-	background: var(--row-accent, #8b5cf6);
+	background: var(--row-accent, oklch(0.66 0.13 50));
 	transform: scaleY(0);
 	transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
