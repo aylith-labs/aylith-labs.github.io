@@ -21,65 +21,120 @@
 </script>
 
 <svelte:head>
-	<title>Aylith — AI Product Studio</title>
-	<meta name="description" content="Aylith is an AI product studio building tools that solve real problems for developers, knowledge workers, and teams." />
+	<title>Aylith. A lab that turns demand signals into shipped AI tools.</title>
+	<meta name="description" content="A lab that turns demand signals into shipped AI tools. 138+ launches analyzed; ten products built; days, not quarters. The method, the portfolio, the receipts." />
 </svelte:head>
 
 <!-- Hero -->
-<section class="relative overflow-hidden">
-	<div class="absolute inset-0 bg-gradient-to-b from-accent-50/60 via-white to-white dark:from-surface-900 dark:via-surface-950 dark:to-surface-950"></div>
-	<div class="absolute -left-40 -top-40 size-[500px] rounded-full bg-accent-400/6 blur-[100px] animate-float dark:bg-accent-500/3"></div>
-	<div class="absolute -right-20 top-20 size-[400px] rounded-full bg-warm-300/10 blur-[80px] animate-float-delayed dark:bg-warm-400/3"></div>
-
-	<div class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-44">
+<section class="relative">
+	<div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-44">
 		<div class="max-w-3xl">
-			<div class="animate-fade-in-up mb-8 inline-flex items-center gap-2.5 rounded-full border border-accent-200/60 bg-accent-50/80 px-4 py-1.5 text-sm font-medium text-accent-700 dark:border-surface-700 dark:bg-surface-800/80 dark:text-accent-300">
-				<span class="relative flex size-2">
-					<span class="absolute inline-flex size-full animate-ping rounded-full bg-accent-500 opacity-75"></span>
-					<span class="relative inline-flex size-2 rounded-full bg-accent-500"></span>
-				</span>
-				AI Product Studio
-			</div>
-
-			<h1 class="animate-fade-in-up text-5xl font-bold leading-[1.08] tracking-tight text-surface-900 sm:text-6xl lg:text-7xl dark:text-warm-50" style="animation-delay: 0.1s">
-				We build AI tools<br />
-				<span class="text-accent-600 dark:text-accent-400">that actually work.</span>
+			<h1 class="animate-fade-in-up text-5xl font-bold leading-[1.08] tracking-tight text-surface-900 sm:text-6xl lg:text-7xl dark:text-warm-50">
+				Read the signal.<br />
+				Build the tool.<br />
+				Ship in days.
 			</h1>
 
-			<p class="animate-fade-in-up mt-6 max-w-lg text-lg leading-relaxed text-surface-500 sm:text-xl dark:text-warm-300" style="animation-delay: 0.2s">
-				Ten products across seven categories — each backed by analysis
-				of 138+ launches and real community demand signals.
+			<p class="animate-fade-in-up mt-8 max-w-xl text-lg leading-relaxed text-surface-500 sm:text-xl dark:text-warm-300" style="animation-delay: 0.1s">
+				Aylith is a lab for turning demand signals into shipped AI tools.
+				Inputs: 138+ launches analyzed.
+				Outputs: the portfolio below.
+				Cadence: days, not quarters.
 			</p>
 
-			<div class="animate-fade-in-up mt-10 flex flex-wrap items-center gap-4" style="animation-delay: 0.3s">
+			<div class="animate-fade-in-up mt-10 flex flex-wrap items-center gap-4" style="animation-delay: 0.2s">
 				<a
 					href="#portfolio"
 					class="btn-press inline-flex items-center gap-2 rounded-xl bg-accent-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent-600/20 hover:bg-accent-500 dark:bg-accent-500 dark:shadow-accent-500/10 dark:hover:bg-accent-400"
 				>
-					See the portfolio
+					See what shipped
 					<svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
 						<path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
 					</svg>
 				</a>
 				<a
-					href="https://github.com/aylith-labs"
+					href="#method"
 					class="btn-press inline-flex items-center gap-2 rounded-xl border border-surface-200 bg-white/80 px-6 py-3.5 text-sm font-semibold text-surface-700 backdrop-blur-sm hover:border-surface-300 dark:border-surface-700 dark:bg-surface-800/60 dark:text-warm-200 dark:hover:border-surface-600"
 				>
-					<svg class="size-4" viewBox="0 0 24 24" fill="currentColor">
-						<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-					</svg>
-					GitHub
+					Read the method
 				</a>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Portfolio: Featured spotlight + compact list -->
-<section id="portfolio" class="py-20 sm:py-28">
+<!-- The loop — three-step method -->
+<section id="method" class="border-t border-surface-200/60 py-20 sm:py-28 dark:border-surface-800/40">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<div class="grid gap-16 lg:grid-cols-3">
+			<div use:reveal>
+				<h2 class="text-3xl font-bold tracking-tight text-surface-900 sm:text-4xl dark:text-warm-50">
+					The loop
+				</h2>
+				<p class="mt-4 text-lg leading-relaxed text-surface-500 dark:text-warm-300">
+					Three steps, repeated.
+					Most signals don't survive step two.
+					Most builds don't survive step three.
+					The portfolio below is what survived both.
+				</p>
+			</div>
+
+			<ol class="space-y-10 lg:col-span-2">
+				<li use:reveal={{ delay: 100 }}>
+					<div class="flex items-baseline gap-4">
+						<span class="font-mono text-xs font-medium tracking-[0.16em] text-surface-400 dark:text-warm-400">01</span>
+						<h3 class="text-xl font-bold text-surface-900 dark:text-warm-50">Listen</h3>
+					</div>
+					<p class="mt-3 text-base leading-relaxed text-surface-500 dark:text-warm-300">
+						Comments under product launches.
+						Reviews that name what's missing.
+						Threads where the same complaint shows up three times in a row.
+						138+ launches monitored to date.
+					</p>
+				</li>
+
+				<li use:reveal={{ delay: 200 }}>
+					<div class="flex items-baseline gap-4">
+						<span class="font-mono text-xs font-medium tracking-[0.16em] text-surface-400 dark:text-warm-400">02</span>
+						<h3 class="text-xl font-bold text-surface-900 dark:text-warm-50">Pattern</h3>
+					</div>
+					<p class="mt-3 text-base leading-relaxed text-surface-500 dark:text-warm-300">
+						A signal that turns up in three independent launches is a candidate.
+						A candidate that survives a weekend of building is a product.
+						Most candidates don't.
+					</p>
+				</li>
+
+				<li use:reveal={{ delay: 300 }}>
+					<div class="flex items-baseline gap-4">
+						<span class="font-mono text-xs font-medium tracking-[0.16em] text-surface-400 dark:text-warm-400">03</span>
+						<h3 class="text-xl font-bold text-surface-900 dark:text-warm-50">Ship</h3>
+					</div>
+					<p class="mt-3 text-base leading-relaxed text-surface-500 dark:text-warm-300">
+						Public from day one.
+						No private beta, no waitlist, no launch email.
+						If it works, the next signal is already queued.
+					</p>
+				</li>
+			</ol>
+		</div>
+	</div>
+</section>
+
+<!-- Portfolio: featured spotlight + compact list -->
+<section id="portfolio" class="border-t border-surface-200/60 py-20 sm:py-28 dark:border-surface-800/40">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-		<!-- Featured projects — large cards -->
+		<div class="mb-12 flex items-baseline justify-between gap-6" use:reveal>
+			<h2 class="text-3xl font-bold tracking-tight text-surface-900 sm:text-4xl dark:text-warm-50">
+				What shipped
+			</h2>
+			<p class="font-mono text-xs tracking-[0.14em] text-surface-400 dark:text-warm-400">
+				TEN PRODUCTS · SEVEN CATEGORIES · NEWEST FIRST
+			</p>
+		</div>
+
+		<!-- Featured projects, large cards -->
 		<div class="grid gap-6 lg:grid-cols-3">
 			{#each featured as project, i}
 				<a
@@ -158,52 +213,3 @@
 	</div>
 </section>
 
-<!-- Approach — editorial, not cards -->
-<section class="border-t border-surface-200/60 py-20 sm:py-28 dark:border-surface-800/40">
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-		<div class="grid gap-16 lg:grid-cols-2">
-			<div use:reveal>
-				<h2 class="text-3xl font-bold tracking-tight text-surface-900 sm:text-4xl dark:text-warm-50">
-					Our Approach
-				</h2>
-				<p class="mt-4 text-lg leading-relaxed text-surface-500 dark:text-warm-300">
-					We don't build solutions looking for problems. Every product starts with
-					evidence — real frustration from real communities, validated demand,
-					and a clear gap no existing tool fills well.
-				</p>
-			</div>
-
-			<div class="space-y-10">
-				<div use:reveal={{ delay: 100 }}>
-					<div class="flex items-baseline gap-4">
-						<span class="text-3xl font-bold tabular-nums text-accent-600 dark:text-accent-400">138+</span>
-						<span class="text-sm font-medium text-surface-400 dark:text-warm-400">products analyzed</span>
-					</div>
-					<p class="mt-2 text-sm leading-relaxed text-surface-500 dark:text-warm-300">
-						Product Hunt launches, Reddit threads, competitor landscapes — deep research before writing a single line of code.
-					</p>
-				</div>
-
-				<div use:reveal={{ delay: 200 }}>
-					<div class="flex items-baseline gap-4">
-						<span class="text-3xl font-bold tabular-nums text-emerald-600 dark:text-emerald-400">5</span>
-						<span class="text-sm font-medium text-surface-400 dark:text-warm-400">markets validated</span>
-					</div>
-					<p class="mt-2 text-sm leading-relaxed text-surface-500 dark:text-warm-300">
-						Demand signals from communities with hundreds of thousands of members. Not guesses — proof.
-					</p>
-				</div>
-
-				<div use:reveal={{ delay: 300 }}>
-					<div class="flex items-baseline gap-4">
-						<span class="text-3xl font-bold tabular-nums text-blue-600 dark:text-blue-400">Solo</span>
-						<span class="text-sm font-medium text-surface-400 dark:text-warm-400">buildable scope</span>
-					</div>
-					<p class="mt-2 text-sm leading-relaxed text-surface-500 dark:text-warm-300">
-						Each product is scoped for a solo developer or small team. No enterprise infrastructure required to reach MVP.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
