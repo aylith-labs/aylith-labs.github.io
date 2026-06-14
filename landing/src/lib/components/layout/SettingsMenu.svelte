@@ -56,7 +56,7 @@
 					aria-pressed={current === option.value}
 					class="flex-1 rounded-md px-2 py-1 text-xs font-medium transition-colors {current ===
 					option.value
-						? 'bg-accent-500 text-white'
+						? 'bg-accent-500 text-surface-900'
 						: 'text-surface-600 hover:bg-surface-100 dark:text-warm-300 dark:hover:bg-surface-700'}"
 				>
 					{option.label}
@@ -95,7 +95,7 @@
 					target={link.external ? '_blank' : undefined}
 					rel={link.external ? 'noreferrer' : undefined}
 					onclick={close}
-					class="flex items-center justify-between rounded-lg px-3 py-2 text-sm font-medium text-surface-700 transition-colors hover:bg-surface-100 hover:text-surface-900 dark:text-warm-200 dark:hover:bg-surface-800"
+					class="flex items-center justify-between rounded-lg px-3 py-2 text-sm font-medium text-surface-700 transition-colors hover:bg-surface-100 hover:text-surface-900 dark:text-warm-200 dark:hover:bg-surface-800 dark:hover:text-warm-50"
 				>
 					{link.label}
 					{#if link.external}

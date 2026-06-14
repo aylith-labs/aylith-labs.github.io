@@ -34,12 +34,12 @@
 <section class="relative">
 	<div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-44">
 		<div class="max-w-3xl">
-			<div class="animate-fade-in-up mb-10 flex items-center gap-4 text-surface-900 dark:text-warm-50">
-				<Mark class="h-11 w-auto shrink-0 sm:h-14" />
+			<div class="animate-fade-in-up mb-10 flex items-center gap-3 text-surface-900 sm:gap-4 dark:text-warm-50">
+				<Mark class="h-[clamp(2.5rem,8vw,5rem)] w-auto shrink-0" />
 				<Wordmark variant={wordmarkVariant} size="hero" />
 			</div>
 
-			<h1 class="animate-fade-in-up text-5xl font-bold leading-[1.08] tracking-tight text-surface-900 sm:text-6xl lg:text-7xl dark:text-warm-50" style="animation-delay: 0.05s">
+			<h1 class="animate-fade-in-up text-4xl font-normal leading-[1.1] tracking-tight text-surface-900 sm:text-5xl lg:text-6xl dark:text-warm-50" style="animation-delay: 0.05s">
 				Read the signal.<br />
 				Build the tool.<br />
 				Ship in days.

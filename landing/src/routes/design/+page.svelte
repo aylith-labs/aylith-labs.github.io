@@ -154,7 +154,7 @@
 		{#each sections as section (section.id)}
 			<a
 				href="#{section.id}"
-				class="whitespace-nowrap rounded-lg px-3 py-1.5 text-sm font-medium text-surface-600 transition-colors hover:bg-surface-100 hover:text-surface-900 dark:text-warm-300 dark:hover:bg-surface-800"
+				class="whitespace-nowrap rounded-lg px-3 py-1.5 text-sm font-medium text-surface-600 transition-colors hover:bg-surface-100 hover:text-surface-900 dark:text-warm-300 dark:hover:bg-surface-800 dark:hover:text-warm-50"
 			>
 				{section.label}
 			</a>
@@ -411,7 +411,7 @@
 				<p class="text-xs font-medium uppercase tracking-wider text-surface-400">Buttons</p>
 				<div class="mt-4 flex flex-wrap items-center gap-3">
 					<button class="btn-press rounded-md bg-accent-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-600">Primary</button>
-					<button class="btn-press rounded-md px-3.5 py-2 text-sm font-semibold text-surface-700 hover:bg-surface-100 hover:text-surface-900 dark:text-warm-200 dark:hover:bg-surface-800">Ghost</button>
+					<button class="btn-press rounded-md px-3.5 py-2 text-sm font-semibold text-surface-700 hover:bg-surface-100 hover:text-surface-900 dark:text-warm-200 dark:hover:bg-surface-800 dark:hover:text-warm-50">Ghost</button>
 					<button class="rounded-md bg-accent-500 px-5 py-2.5 text-sm font-semibold text-white opacity-50" disabled>Disabled</button>
 				</div>
 			</div>

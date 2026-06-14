@@ -7,7 +7,7 @@ status: planning
 features:
   - Auto-generates changelogs from commits and PRs
   - Creates blog posts about releases
-  - Crafts social media threads for Twitter/X, LinkedIn, Bluesky
+  - Crafts social media threads for X, LinkedIn, Bluesky
   - Understands the "why" behind changes, not just the "what"
   - Scheduled publishing with approval workflows
 targetUser: Developer founders and small teams shipping fast but lagging on communication

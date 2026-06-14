@@ -46,7 +46,7 @@
 					aria-pressed={motion.preference === option.value}
 					class="btn-press rounded-md px-3 py-1.5 text-xs font-medium transition-colors {motion.preference ===
 					option.value
-						? 'bg-accent-500 text-white'
+						? 'bg-accent-500 text-surface-900'
 						: 'text-surface-600 hover:bg-surface-100 dark:text-warm-300 dark:hover:bg-surface-700'}"
 				>
 					{option.label}
