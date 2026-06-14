@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import { motion } from '$lib/stores/motion.svelte';
 
 	type Size = 'nav' | 'footer' | 'gallery' | 'hero';
@@ -8,14 +8,35 @@
 
 	const letters = ['A', 'Y', 'L', 'I', 'T', 'H'];
 
+	// Total run time per variant (ms): base duration + the last letter's stagger delay.
+	// Used to lock out re-triggers until the current pass finishes.
+	const DURATIONS: Record<number, number> = {
+		1: 2250, 2: 2650, 3: 1850, 4: 2750, 5: 1600, 6: 2200,
+		7: 1750, 8: 2400, 9: 2250, 10: 2200, 11: 1250, 12: 1800
+	};
+
 	let host: HTMLElement;
 	// 0 = static ink (SSR / pre-hydration); >0 = a play has been triggered. Bumping it
 	// remounts the word via {#key}, which restarts the CSS animation from frame 0.
 	let playKey = $state(0);
+	let playing = false;
+	let timer: ReturnType<typeof setTimeout> | undefined;
 
-	function replay() {
-		if (motion.isReduced) return;
+	function startPlay() {
+		playing = true;
 		playKey += 1;
+		clearTimeout(timer);
+		timer = setTimeout(() => {
+			playing = false;
+		}, DURATIONS[variant] ?? 2800);
+	}
+
+	/** Replay the highlight. While a pass is in progress a non-forced call is ignored so the
+	    running animation finishes; pass force=true (an explicit Play button) to restart now. */
+	export function replay(force = false) {
+		if (motion.isReduced) return;
+		if (playing && !force) return;
+		startPlay();
 	}
 
 	onMount(() => {
@@ -26,7 +47,7 @@
 				(entries) => {
 					for (const entry of entries) {
 						if (entry.isIntersecting) {
-							playKey += 1;
+							startPlay();
 							observer.unobserve(host);
 						}
 					}
@@ -37,8 +58,10 @@
 			return () => observer.disconnect();
 		}
 
-		playKey += 1;
+		startPlay();
 	});
+
+	onDestroy(() => clearTimeout(timer));
 </script>
 
 <span
@@ -46,7 +69,7 @@
 	class="word-host wm-{size}"
 	role="img"
 	aria-label="Aylith"
-	onmouseenter={replay}
+	onmouseenter={() => replay()}
 >
 	{#key playKey}
 		<span class="word v{variant}" class:is-playing={playKey > 0} aria-hidden="true">

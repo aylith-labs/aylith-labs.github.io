@@ -12,7 +12,7 @@ Context: usually a focused session on a desktop browser, not a casual scroll. Vi
 
 ## Product Purpose
 
-Aylith.com is the public face of a portfolio lab. It explains how the lab works (read the signal → build the tool → ship in days), shows the receipts (138+ launches analyzed, ten products built, public from day one), and lets each tool stand on its own from the index.
+Aylith.com is the public face of a portfolio lab. It explains how the lab works (read the signal → build the tool → ship in days), shows the receipts (138+ launches analyzed, every tool public from day one), and lets each tool stand on its own from the index.
 
 The page is not a brochure for any single tool — each tool has its own product surface elsewhere. It's the connective tissue: it makes the portfolio legible as a coherent practice instead of a random list of side projects.
 
@@ -37,7 +37,7 @@ These four lanes cover the great majority of AI/tools sites in 2026. The default
 
 ## Design Principles
 
-1. **Receipts over claims.** Every assertion on the page should be testable. "138+ launches analyzed" beats "extensively researched." "Ten products built" beats "robust portfolio." If a sentence could be on any startup's about page, cut it.
+1. **Receipts over claims.** Every assertion on the page should be testable. "138+ launches analyzed" beats "extensively researched." "Public from day one" beats "robust portfolio." If a sentence could be on any startup's about page, cut it.
 
 2. **Restraint is the brand.** The site signals confidence by refusing to oversell. No animations that exist only to delight; motion conveys state or hierarchy or nothing. No background image unless it's load-bearing. Whitespace is a feature.
 

@@ -27,7 +27,7 @@
 
 <svelte:head>
 	<title>Aylith. A lab that turns demand signals into shipped AI tools.</title>
-	<meta name="description" content="A lab that turns demand signals into shipped AI tools. 138+ launches analyzed; ten products built; days, not quarters. The method, the portfolio, the receipts." />
+	<meta name="description" content="A lab that turns demand signals into shipped AI tools. 138+ launches analyzed; days, not quarters. The method, the portfolio, the receipts." />
 </svelte:head>
 
 <!-- Hero -->
@@ -140,7 +140,7 @@
 				What shipped
 			</h2>
 			<p class="font-mono text-xs tracking-[0.14em] text-surface-400 dark:text-warm-400">
-				TEN PRODUCTS · SEVEN CATEGORIES · NEWEST FIRST
+				SEVEN CATEGORIES · NEWEST FIRST
 			</p>
 		</div>
 

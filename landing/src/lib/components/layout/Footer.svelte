@@ -37,7 +37,7 @@
 				<h3 class="text-xs font-semibold uppercase tracking-wider text-surface-400 dark:text-warm-400">Company</h3>
 				<ul class="mt-3 space-y-2">
 					<li>
-						<a href="/" class="text-sm text-surface-600 transition-colors hover:text-accent-600 dark:text-warm-300 dark:hover:text-accent-400">
+						<a href="/about" class="text-sm text-surface-600 transition-colors hover:text-accent-600 dark:text-warm-300 dark:hover:text-accent-400">
 							About
 						</a>
 					</li>

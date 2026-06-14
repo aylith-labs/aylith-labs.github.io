@@ -160,11 +160,11 @@ A two-anchor palette: a single warm-neutral surface ramp and a single copper acc
 **Display / Headline Font:** Space Grotesk (with system-ui fallback)
 **Body Font:** DM Sans (with system-ui fallback)
 
-**Character:** A two-family system. Space Grotesk does double duty: as the wordmark it is set in all-caps with the six letters spaced a third of an em apart, an editorial-meets-sci-fi masthead in the spirit of the spaced `A L I E N` poster; as the display/headline face it runs at its normal tracking. DM Sans handles all body copy; it's warm enough to sit on cream paper, geometric enough to disappear into the read. (Newsreader was retired from the system when the wordmark moved to the spaced caps lockup.)
+**Character:** A two-family system. Space Grotesk does double duty: as the wordmark it is set in all-caps with the six letters spaced a third of an em apart, a wide editorial-meets-sci-fi masthead; as the display/headline face it runs at its normal tracking. DM Sans handles all body copy; it's warm enough to sit on cream paper, geometric enough to disappear into the read. (Newsreader was retired from the system when the wordmark moved to the spaced caps lockup.)
 
 ### Hierarchy
 
-- **Wordmark** (`Space Grotesk`, 600 nav/footer, 500 hero; uppercase, letters spaced one-em apart as `A Y L I T H`): The name, set as a wide-tracked all-caps lockup in the spirit of the spaced `A L I E N` masthead. Appears in the navbar, footer, and as the large hero masthead. Carries the monthly letter-highlight animation (see Sacred Wordmark Rule). The closest thing the system has to a sacred element.
+- **Wordmark** (`Space Grotesk`, 600 nav/footer, 500 hero; uppercase, letters spaced one-em apart as `A Y L I T H`): The name, set as a wide-tracked all-caps masthead lockup. Appears in the navbar, footer, and as the large hero masthead. Carries the monthly letter-highlight animation (see Sacred Wordmark Rule). The closest thing the system has to a sacred element.
 - **Display** (`Space Grotesk`, 700, `clamp(2.5rem, 6vw, 4.5rem)`, line-height 1.05, tracking -0.02em): Hero headline only. One per page maximum.
 - **Headline** (`Space Grotesk`, 700, 1.5rem, line-height 1.2): Section starts. Card titles. The "h2-class" of the page.
 - **Title** (`Space Grotesk`, 700, 1rem): Subsection labels, project names inside cards.

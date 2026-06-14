@@ -28,7 +28,7 @@
 
 <svelte:head>
 	<title>Projects — Aylith</title>
-	<meta name="description" content="Explore all 10 Aylith products across AI infrastructure, developer tools, productivity, and more." />
+	<meta name="description" content="Explore the Aylith portfolio across AI infrastructure, developer tools, productivity, and more." />
 </svelte:head>
 
 <section class="py-16 sm:py-20">

@@ -5,16 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 		<script>
-			// Resolve the motion preference before first paint so animations never flash.
+			// Resolve theme and motion preferences before first paint so nothing flashes.
 			(() => {
 				try {
-					const stored = localStorage.getItem('aylith:motion');
-					const pref = stored === 'reduced' || stored === 'full' ? stored : 'system';
+					const motionStored = localStorage.getItem('aylith:motion');
+					const motionPref =
+						motionStored === 'reduced' || motionStored === 'full' ? motionStored : 'system';
 					const systemReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-					const resolved = pref === 'system' ? (systemReduced ? 'reduced' : 'full') : pref;
-					document.documentElement.dataset.motion = resolved;
+					document.documentElement.dataset.motion =
+						motionPref === 'system' ? (systemReduced ? 'reduced' : 'full') : motionPref;
+
+					const themeStored = localStorage.getItem('theme');
+					const themePref =
+						themeStored === 'light' || themeStored === 'dark' ? themeStored : 'system';
+					const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+					const isDark = themePref === 'dark' || (themePref === 'system' && systemDark);
+					document.documentElement.classList.toggle('dark', isDark);
 				} catch (error) {
-					/* no-op: CSS falls back to the prefers-reduced-motion media query */
+					/* no-op: components apply preferences on mount */
 				}
 			})();
 		</script>

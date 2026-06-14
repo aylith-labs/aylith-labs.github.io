@@ -5,10 +5,18 @@
 	import Navbar from '$lib/components/layout/Navbar.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 	import { motion } from '$lib/stores/motion.svelte';
+	import { theme } from '$lib/stores/theme.svelte';
 
 	let { children } = $props();
 
-	onMount(() => motion.init());
+	onMount(() => {
+		const stopMotion = motion.init();
+		const stopTheme = theme.init();
+		return () => {
+			stopMotion();
+			stopTheme();
+		};
+	});
 
 	if (browser) {
 		// Console easter egg

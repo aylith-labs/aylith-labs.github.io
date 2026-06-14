@@ -8,9 +8,9 @@
 
 	const currentVariant = getMonthlyVariant();
 
-	let replayKeys = $state(wordmarkVariants.map(() => 0));
-	function replay(index: number) {
-		replayKeys[index] += 1;
+	let wordmarks = $state<Array<{ replay: (force?: boolean) => void } | undefined>>([]);
+	function replay(index: number, force = false) {
+		wordmarks[index]?.replay(force);
 	}
 
 	let copied = $state('');
@@ -29,7 +29,7 @@
 	const markReadings = [
 		{
 			label: 'A count',
-			body: 'The strokes are a tally, the original mark’s idea: marks made one at a time as work ships. The story is a number kept honest (138 launches analyzed, ten products built), and a tally is how you keep a number honest.'
+			body: 'The strokes are a tally, the original mark’s idea: marks made one at a time as work ships. The story is a record kept honest (138 launches analyzed, every tool public from day one), and a tally is how you keep a record honest.'
 		},
 		{
 			label: 'A climb',
@@ -185,8 +185,8 @@
 		<h2 class="font-display text-2xl font-bold text-surface-900 dark:text-warm-50">Brand</h2>
 		<p class="mt-2 max-w-2xl text-sm text-surface-500 dark:text-warm-400">
 			The mark is six vertical strokes, one per letter of AYLITH, climbing past the copper signal
-			diagonal, with an AI spark in the top-left. The wordmark spaces those six letters into a
-			masthead in the spirit of the <span class="font-medium">A L I E N</span> lockup.
+			diagonal, with an AI spark in the top-left. The wordmark spaces those same six letters into a
+			wide-tracked uppercase masthead.
 		</p>
 
 		<!-- The mark, explained -->
@@ -265,6 +265,8 @@
 		<div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 			{#each wordmarkVariants as variant, index (variant.id)}
 				<div
+					role="group"
+					onmouseenter={() => replay(index)}
 					class="relative rounded-xl border border-surface-200 bg-surface-50 p-5 dark:border-surface-800 dark:bg-surface-900/40 {variant.id ===
 					currentVariant
 						? 'ring-1 ring-accent-500'
@@ -276,9 +278,7 @@
 						</span>
 					{/if}
 					<div class="flex min-h-[56px] items-center text-surface-900 dark:text-warm-50">
-						{#key replayKeys[index]}
-							<Wordmark variant={variant.id} size="gallery" />
-						{/key}
+						<Wordmark bind:this={wordmarks[index]} variant={variant.id} size="gallery" />
 					</div>
 					<div class="mt-4 flex items-center justify-between">
 						<span class="text-sm font-medium text-surface-700 dark:text-warm-200">
@@ -287,7 +287,7 @@
 						</span>
 						<button
 							type="button"
-							onclick={() => replay(index)}
+							onclick={() => replay(index, true)}
 							class="btn-press rounded-md px-2.5 py-1 text-xs font-medium text-accent-600 hover:bg-accent-500/10 dark:text-accent-400"
 						>
 							Play
