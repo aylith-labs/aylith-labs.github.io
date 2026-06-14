@@ -38,6 +38,8 @@
 
 html {
 	scroll-behavior: smooth;
+	/* always reserve the scrollbar gutter so pages without overflow don't shift horizontally */
+	scrollbar-gutter: stable;
 }
 
 @media (prefers-reduced-motion: reduce) {

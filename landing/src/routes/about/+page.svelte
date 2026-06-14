@@ -15,7 +15,8 @@
 		class="animate-fade-in-up mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-surface-900 sm:text-5xl dark:text-warm-50"
 		style="animation-delay: 0.05s"
 	>
-		We listen first, then we move fast.
+		We listen first,<br />
+		then we move fast.
 	</h1>
 
 	<div
