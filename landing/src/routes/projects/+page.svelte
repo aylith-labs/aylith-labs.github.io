@@ -2,6 +2,7 @@
 	import ProjectCard from '$lib/components/home/ProjectCard.svelte';
 	import { reveal } from '$lib/actions/reveal';
 	import type { Project } from '$lib/types/project';
+	import Seo from '$lib/components/Seo.svelte';
 
 	let { data } = $props();
 	let projects: Project[] = $derived(data.projects);
@@ -26,10 +27,10 @@
 	);
 </script>
 
-<svelte:head>
-	<title>Projects — Aylith</title>
-	<meta name="description" content="Explore the Aylith portfolio across AI infrastructure, developer tools, productivity, and more." />
-</svelte:head>
+<Seo
+	title="Projects — Aylith"
+	description="Explore the Aylith portfolio across AI infrastructure, developer tools, productivity, and more."
+/>
 
 <section class="py-16 sm:py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -38,7 +39,7 @@
 				All Projects
 			</h1>
 			<p class="mt-3 text-lg text-surface-500 dark:text-warm-300">
-				Ten AI-powered products addressing validated market gaps.
+				The complete catalog — {projects.length} tools, each built from a signal that repeated.
 			</p>
 		</div>
 

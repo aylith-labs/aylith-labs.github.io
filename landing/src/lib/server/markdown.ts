@@ -32,7 +32,7 @@ export function getProjects(): Project[] {
 			} as Project;
 		})
 		.sort((a, b) => {
-			const order = projectMeta.map((p) => p.slug);
+			const order: string[] = projectMeta.map((p) => p.slug);
 			return order.indexOf(a.slug) - order.indexOf(b.slug);
 		});
 }

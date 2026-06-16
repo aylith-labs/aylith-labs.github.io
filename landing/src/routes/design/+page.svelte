@@ -5,6 +5,7 @@
 	import { reveal } from '$lib/actions/reveal';
 	import { tilt } from '$lib/actions/tilt';
 	import { wordmarkVariants, getMonthlyVariant } from '$lib/brand/rotation';
+	import Seo from '$lib/components/Seo.svelte';
 
 	const currentVariant = getMonthlyVariant();
 

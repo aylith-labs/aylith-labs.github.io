@@ -1,10 +1,11 @@
-<svelte:head>
-	<title>About — Aylith</title>
-	<meta
-		name="description"
-		content="Aylith is patient about the right things. We watch what people keep asking for, find the pattern, and ship the tool in days, not quarters."
-	/>
-</svelte:head>
+<script lang="ts">
+	import Seo from '$lib/components/Seo.svelte';
+</script>
+
+<Seo
+	title="About — Aylith"
+	description="Aylith is patient about the right things. We watch what people keep asking for, find the pattern, and ship the tool in days, not quarters."
+/>
 
 <section class="mx-auto max-w-3xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
 	<p class="animate-fade-in-up text-xs font-medium uppercase tracking-[0.14em] text-accent-600 dark:text-accent-400">

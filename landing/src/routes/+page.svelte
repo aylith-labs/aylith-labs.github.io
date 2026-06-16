@@ -8,6 +8,7 @@
 	import { getMonthlyVariant } from '$lib/brand/rotation';
 	import { motion } from '$lib/stores/motion.svelte';
 	import type { Project } from '$lib/types/project';
+	import Seo from '$lib/components/Seo.svelte';
 
 	const wordmarkVariant = getMonthlyVariant();
 
@@ -47,10 +48,10 @@
 	};
 </script>
 
-<svelte:head>
-	<title>Aylith. A lab that turns demand signals into shipped AI tools.</title>
-	<meta name="description" content="A lab that turns demand signals into shipped AI tools. 138+ launches analyzed; days, not quarters. The method, the portfolio, the receipts." />
-</svelte:head>
+<Seo
+	title="Aylith. A lab that turns demand signals into shipped AI tools."
+	description="A lab that turns demand signals into shipped AI tools. 138+ launches analyzed; days, not quarters. The method, the portfolio, the receipts."
+/>
 
 <!-- Hero -->
 <section class="relative">

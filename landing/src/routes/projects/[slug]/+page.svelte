@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Project } from '$lib/types/project';
 	import { reveal } from '$lib/actions/reveal';
+	import Seo from '$lib/components/Seo.svelte';
 
 	let { data } = $props();
 	let project: Project = $derived(data.project);
@@ -24,10 +25,7 @@
 	};
 </script>
 
-<svelte:head>
-	<title>{project.name} — Aylith</title>
-	<meta name="description" content={project.description} />
-</svelte:head>
+<Seo title="{project.name} — Aylith" description={project.description} type="article" />
 
 <!-- Hero -->
 <section class="relative overflow-hidden">
