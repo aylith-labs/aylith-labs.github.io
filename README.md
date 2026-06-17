@@ -8,7 +8,7 @@ The site is a fully prerendered, static SvelteKit app — intentionally lightwei
 
 ## What & Why
 
-Founders, technical builders, and practitioners land here to answer one question: *is this lab real, or theater?* The site answers it with evidence, not adjectives — 138+ launches analyzed, every tool public from day one, and the **complete 24-tool studio catalog** laid out in one index. The brand is quietly confident: warm-stone palette, Newsreader-class serif wordmark, copy that refuses superlatives and future-tense marketing. Restraint is the brand.
+Founders, technical builders, and practitioners land here to answer one question: *is this lab real, or theater?* The site answers it with evidence, not adjectives — 138+ launches analyzed, every tool public from day one, and the **complete 26-tool studio catalog** laid out in one index. The brand is quietly confident: warm-stone palette, Newsreader-class serif wordmark, copy that refuses superlatives and future-tense marketing. Restraint is the brand.
 
 ## Features & Sections
 
@@ -17,7 +17,7 @@ Founders, technical builders, and practitioners land here to answer one question
 | **Hero** | Animated tally-mark + "A Y L I T H" wordmark lockup that builds itself on load (twelve monthly animation variants). Fluid type, viewport-aware. |
 | **The loop** | The three-step method — Listen → Pattern → Ship — with scroll-reveal. |
 | **Portfolio** | Featured tools as large cards plus a compact list of the rest, accent-coloured per tool. |
-| **Projects catalog** (`/projects`) | The complete catalog — all 25 studio tools as cards (name, tagline, one-line description, link to its detail page), with a status-mix overview and client-side category filtering (each category tab carries its count) across seven categories. Responsive, light + dark, no layout shift. |
+| **Projects catalog** (`/projects`) | The complete catalog — all 26 studio tools as cards (name, tagline, one-line description, link to its detail page), with a status-mix overview and client-side category filtering (each category tab carries its count) across seven categories. Responsive, light + dark, no layout shift. |
 | **Project detail** (`/projects/[slug]`) | Per-tool page rendered from Markdown: tagline, description, features, target user, long-form body. |
 | **About** (`/about`) | The lab's posture in three short paragraphs. |
 | **Design system** (`/design`) | Live brand reference — mark readings, wordmark variants, palette, motion controls, copy-to-clipboard tokens. |
@@ -110,7 +110,7 @@ aylith.com/
     │       ├── about/
     │       ├── design/         # Live design system
     │       ├── projects/
-    │       │   ├── +page.svelte        # Catalog + category filter (25 tools)
+    │       │   ├── +page.svelte        # Catalog + category filter (26 tools)
     │       │   └── [slug]/+page.svelte # Detail (rendered from Markdown)
     │       └── sitemap.xml/    # Prerendered sitemap endpoint
     ├── static/                 # CNAME, favicons, brand avatars, robots.txt
