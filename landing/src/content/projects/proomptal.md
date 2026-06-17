@@ -1,29 +1,31 @@
 ---
 name: Proomptal
-tagline: The public front door to the whole suite
-description: The customer-facing product hub for the Aylith suite — one place to browse every tool, read the changelog and blog, check live status, and see pricing, all backed by stats the products push themselves.
+tagline: A local-first prompt operating system
+description: A local-first prompt operating system — craft, organize, and deploy your prompts into Claude Code, Cursor, and any AI tool, with one-click install and a proomptal CLI for the terminal.
 category: ai-infrastructure
 status: building
 features:
-  - A single showcase for every product in the suite
-  - Live changelog and blog drawn from what the tools actually shipped
-  - Real-time status and health for every service
-  - Pricing and plans in one consistent place
-  - Stats and signals the products publish themselves, not hand-maintained copy
-targetUser: People evaluating the suite who want one trustworthy place to see what exists, what is new, and whether it is up
+  - Craft prompts with variable templating, preview, and version history
+  - Organize with tags, favorites, and collections instead of loose files
+  - One-click install into Claude Code, Cursor, and other AI tools
+  - A proomptal add/list/search/install CLI for terminal-first workflows
+  - Full-text and semantic search across your whole prompt library
+  - Local-first storage so your prompts live on your machine
+targetUser: Prompt crafters who want their best prompts one keystroke from any AI coding tool
 ---
 
 ## Vision
 
-A suite of products is only as legible as its front door. Proomptal is that door — a single public site where every tool is listed, the changelog and blog reflect what actually shipped, status is live rather than aspirational, and pricing is stated once and consistently. It is the place a stranger lands and, within seconds, understands what the suite is, what is new, and whether it is working right now.
+Your best prompts should be one keystroke from wherever you are working, not buried in a chat log or a folder of untitled files. Proomptal is a local-first prompt operating system: a single place to craft, organize, and deploy the prompts you actually reuse — into Claude Code, Cursor, or any AI tool — by one click in the app or `proomptal install` in the terminal. Your prompts live on your machine, organized into a library you can search instead of a pile you dig through.
 
 ## The Problem
 
-When a studio ships many products, the public story scatters: each tool has its own landing page, its own changelog if any, its own notion of status, and the marketing copy drifts out of sync with reality the moment it is written. Visitors cannot tell what exists, what is current, or what is up — and the team cannot keep a dozen separate sites honest by hand. The front door becomes a maze.
+Prompt crafters accumulate dozens of genuinely good prompts and then lose them. They scatter across chats, sticky notes, and half-named files; getting one into the tool that needs it means hunting it down, copy-pasting, and re-substituting the same variables by hand. There is no fast path from "I have a great prompt" to "it is installed in Claude Code right now," and no organization layer to make the next one findable. Rapid access is the missing primitive.
 
 ## Key Differentiators
 
-- **Product-fed, not hand-maintained**: changelog, stats, and status come from the products themselves, so the public site stays true without manual upkeep.
-- **Live, not aspirational**: health and status reflect the real state of every service, not a screenshot from launch day.
-- **One coherent front door**: every product, its pricing, and its news live under a single consistent surface instead of a dozen drifting pages.
-- **Built to scale with the suite**: adding a product means it appears in the hub, not that someone rebuilds a marketing site.
+- **Local-first, not a cloud silo**: your prompts live on your machine, fast and private, synced rather than trapped.
+- **One-click deploy and a CLI**: install a prompt into Claude Code or Cursor from a button — or `proomptal add/list/search/install` straight from the terminal.
+- **Real organization**: tags, favorites, and collections plus full-text and semantic search turn a pile of files into a library.
+- **Variable templating**: parameterize prompts once and fill them in on deploy, instead of editing the same placeholders every time.
+- **Complements Agentry**: Agentry is the web library where prompts and agents are shared and discovered; Proomptal is the local-first companion that puts them one keystroke from your editor and installs them where they run.
