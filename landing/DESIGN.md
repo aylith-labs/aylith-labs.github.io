@@ -120,7 +120,7 @@ components:
 
 **Creative North Star: "The Editorial Atelier"**
 
-Aylith.com is laid out like a small-press monograph that happens to be a portfolio. The wordmark is set in Newsreader the way a magazine masthead is set; the work below it sits on a warm-stone canvas the way letterpress sits on cotton; the single accent — copper, drawn from the tally-mark's diagonal — appears the way an editor's pencil-mark appears: rarely, with weight. The page is not engineered to convert. It is composed to be read.
+Aylith.com is laid out like a small-press monograph that happens to be a portfolio. The wordmark is set in Newsreader the way a magazine masthead is set; the work below it sits on a warm-stone canvas the way letterpress sits on cotton; the single accent — copper, drawn from the mark's signal curve — appears the way an editor's pencil-mark appears: rarely, with weight. The page is not engineered to convert. It is composed to be read.
 
 The system rejects four neighboring lanes by name, lifted directly from the strategic brief: **generic SaaS gradient hell** (Stripe/Linear/Vercel glassmorphism, hero-metric cards, gradient mesh backgrounds), **AI-startup neon-on-black** (OpenAI-adjacent terminals, electric-blue glow), **enterprise B2B navy-and-gray** (logo walls, corporate stock photography), and **Web3 / crypto neon-and-gradient** (saturated purples, animated orbs, $TOKEN energy). The first reflex for any AI/tools site in 2026 is one of these four. None of them are here.
 
@@ -131,6 +131,18 @@ The system rejects four neighboring lanes by name, lifted directly from the stra
 - Three-family typography pairing: Newsreader for the wordmark, Space Grotesk for headlines, DM Sans for body. Each font has one job; the families don't bleed across roles.
 - Flat-by-default surfaces. Depth is conveyed by motion (subtle hover-lift), not by shadows.
 - No future-tense copy. No animations that exist only to delight. No equal-card grids.
+
+## 1a. The Name
+
+Aylith reads as AI, set in stone. Ay sounds the AI. The ending is ·lith, from líthos, the Greek for stone, the root inside monolith and megalith. The studio turns AI into liths: small, solid tools that last and that you own.
+
+It is a field of liths, not a monolith. One slab is a trap. Aylith ships many sharp tools instead, each its own standing stone, with the umbrella as the field they stand in.
+
+The six letters hold the studio in order. Agents. Yours. Lasting. Indexed. Tools. Hub.
+
+There is a tree in it, for those who hear one. The infrastructure is the roots. The products are the branches. The name was set in stone and still grows.
+
+The four readings are laid out on the live design system at `/design`, beside the mark.
 
 ## 2. Colors
 
@@ -176,7 +188,7 @@ A two-anchor palette: a single warm-neutral surface ramp and a single copper acc
 
 **The One-Face-One-Job Rule.** Space Grotesk does two jobs and the two are kept visually distinct: the wordmark is always uppercase and wide-tracked (`A Y L I T H`); headlines are always sentence/title case at normal tracking. DM Sans is for body. Don't set a headline in spaced caps (it reads as a second wordmark) and don't set body copy in Space Grotesk.
 
-**The Sacred Wordmark Rule.** The wordmark is the six letters `A Y L I T H` in Space Grotesk, uppercase, spaced ~0.34em apart, ink-colored with the lone copper accent supplied by the highlight animation. Each letter is its own element; the lockup carries `aria-label="Aylith"` so assistive tech reads the name, not the letters. The wordmark IS animated — by exactly one effect at a time, drawn from the 12-variant letter-highlight set, which rotates monthly (`getMonthlyVariant()`, January = variant 1 … December = 12). Variants live in `Wordmark.svelte`; each ignites copper over ink and settles back to a static ink resting state. Rules that still hold: copper is the only accent the animation may use (One Accent Rule applies to motion too); the animation plays once on load/in-view and replays on hover, never loops in the navbar; under `prefers-reduced-motion: reduce` the wordmark holds its static ink state and does not animate. The six-stroke mark (six strokes climbing past a copper signal diagonal, with a copper AI spark in the top-left: a tally of shipped work that outpaces its signal) is the wordmark's companion ID, not a competitor — it pairs with the lockup but never out-weights it. The spark and the diagonal share the single copper accent. Its full rationale lives on the live design system at `/design`.
+**The Sacred Wordmark Rule.** The wordmark is the six letters `A Y L I T H` in Space Grotesk, uppercase, spaced ~0.34em apart, ink-colored with the lone copper accent supplied by the highlight animation. Each letter is its own element; the lockup carries `aria-label="Aylith"` so assistive tech reads the name, not the letters. The wordmark IS animated — by exactly one effect at a time, drawn from the 12-variant letter-highlight set, which rotates monthly (`getMonthlyVariant()`, January = variant 1 … December = 12). Variants live in `Wordmark.svelte`; each ignites copper over ink and settles back to a static ink resting state. Rules that still hold: copper is the only accent the animation may use (One Accent Rule applies to motion too); the animation plays once on load/in-view and replays on hover, never loops in the navbar; under `prefers-reduced-motion: reduce` the wordmark holds its static ink state and does not animate. The six-bar mark (six bars climbing from the floor past a copper signal curve, with a copper AI sparkle cluster in the top-left: a tally of shipped work that outpaces its signal) is the wordmark's companion ID, not a competitor — it pairs with the lockup but never out-weights it. The sparkles and the curve share the single copper accent. Its full rationale lives on the live design system at `/design`.
 
 **The No-Aspirational-Copy Rule.** Past and present tense, never future. "Built" not "will build." "Ships" not "will ship." A future-tense heading is the tell that the work isn't done yet; the typography spec carries the strategic line.
 

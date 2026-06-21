@@ -38,11 +38,30 @@
 		},
 		{
 			label: 'A signal',
-			body: 'The copper diagonal is the demand signal Aylith reads. The strokes break past it: the work outpaces the signal, it does not just meet it. Copper is the lone accent, so the signal is one of the only things that gets color.'
+			body: 'The copper curve is the demand signal Aylith reads, drawn as the growth it compounds into. The bars break past it: the work outpaces the signal, it does not just meet it. Copper is the lone accent, so the curve is one of the only things that gets color.'
 		},
 		{
 			label: 'A spark',
-			body: 'The copper sparkle in the top-left marks the work as AI-driven, the modern signifier for intelligence in the loop. It is what makes the cadence days, not quarters, and it is held to the same single copper accent.'
+			body: 'The copper sparkles in the top-left mark the work as AI-driven, the modern signifier for intelligence in the loop. They are what make the cadence days, not quarters, and they are held to the same single copper accent.'
+		}
+	];
+
+	const nameReadings = [
+		{
+			label: 'AI, in stone',
+			body: 'Say it and it splits. Ay is AI. The ending is ·lith, from líthos, the Greek for stone, the root inside monolith and megalith. Aylith turns AI into liths: small, solid tools that last and that you own.'
+		},
+		{
+			label: 'A field',
+			body: 'One slab is a trap. Aylith ships many sharp tools instead, each its own standing stone, with the umbrella as the field they stand in.'
+		},
+		{
+			label: 'Six letters',
+			body: 'Read down the name and it holds the studio. Agents. Yours. Lasting. Indexed. Tools. Hub.'
+		},
+		{
+			label: 'Roots and branches',
+			body: 'There is a tree in it, for those who hear one. The infrastructure is the roots. The products are the branches. Set in stone and still growing.'
 		}
 	];
 
@@ -219,9 +238,9 @@
 						Six strokes that climb past the signal
 					</p>
 					<p class="mt-2 text-sm leading-relaxed text-surface-500 dark:text-warm-400">
-						The work, counted and climbing past its own signal, with an AI spark in the corner. Six
-						vertical strokes, one for each letter of AYLITH, crossed by a single copper diagonal. It
-						carries four readings at once, and they reinforce each other.
+						The work, counted and climbing past its own signal, with an AI sparkle cluster in the
+						corner. Six bars, one for each letter of AYLITH, climbing from the floor and crossed by a
+						single copper curve. It carries four readings at once, and they reinforce each other.
 					</p>
 
 					<dl class="mt-6 space-y-4">
@@ -236,7 +255,7 @@
 					<p class="mt-6 border-t border-surface-200/70 pt-4 text-sm leading-relaxed text-surface-600 dark:border-surface-800/60 dark:text-warm-300">
 						It keeps the equity of the old tally mark while fixing its one weakness: a level tally
 						says “we counted”, not “we are going somewhere”. Ascending says both, and the bars
-						breaking past the diagonal turn the signal into something the work outruns.
+						breaking past the curve turn the signal into something the work outruns.
 					</p>
 				</div>
 			</div>
@@ -251,6 +270,18 @@
 			<p class="mt-8 text-xs text-surface-500 dark:text-warm-400">
 				Space Grotesk · uppercase · ~0.34em tracking · <code class="rounded bg-surface-100 px-1 dark:bg-surface-800">aria-label="Aylith"</code>
 			</p>
+
+			<p class="mt-8 border-t border-surface-200/70 pt-6 text-sm leading-relaxed text-surface-600 dark:border-surface-800/60 dark:text-warm-300">
+				The name carries four readings at once, the same way the mark does.
+			</p>
+			<dl class="mt-5 space-y-4">
+				{#each nameReadings as reading (reading.label)}
+					<div class="grid grid-cols-[132px_1fr] gap-3">
+						<dt class="text-sm font-semibold text-accent-600 dark:text-accent-400">{reading.label}</dt>
+						<dd class="text-sm leading-relaxed text-surface-500 dark:text-warm-400">{reading.body}</dd>
+					</div>
+				{/each}
+			</dl>
 		</div>
 
 		<!-- Wordmark animation gallery -->

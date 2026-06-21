@@ -36,7 +36,30 @@
 		<p>The portfolio is what listening turned into.</p>
 	</div>
 
-	<div class="animate-fade-in-up mt-10 flex flex-wrap items-center gap-4" style="animation-delay: 0.15s">
+	<p
+		class="animate-fade-in-up mt-12 text-xs font-medium uppercase tracking-[0.14em] text-accent-600 dark:text-accent-400"
+		style="animation-delay: 0.15s"
+	>
+		About the name
+	</p>
+	<div
+		class="animate-fade-in-up mt-3 space-y-5 text-lg leading-relaxed text-surface-600 dark:text-warm-300"
+		style="animation-delay: 0.18s"
+	>
+		<p>
+			Aylith reads as AI, set in stone. Ay is the AI. The ending is ·lith, from líthos, the Greek
+			for stone, the root inside monolith and megalith. The studio turns AI into liths: small,
+			solid tools that last and that you own.
+		</p>
+		<p>
+			It is a field of liths, not a monolith. Many sharp tools, each its own standing stone, under
+			one umbrella. Read the letters and they hold the studio in order. Agents. Yours. Lasting.
+			Indexed. Tools. Hub.
+		</p>
+		<p>There is a tree in it too. The infrastructure is the roots, the products the branches.</p>
+	</div>
+
+	<div class="animate-fade-in-up mt-10 flex flex-wrap items-center gap-4" style="animation-delay: 0.22s">
 		<a
 			href="/projects"
 			class="btn-press inline-flex items-center gap-2 rounded-xl bg-accent-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent-600/20 hover:bg-accent-500 dark:bg-accent-500 dark:shadow-accent-500/10 dark:hover:bg-accent-400"
