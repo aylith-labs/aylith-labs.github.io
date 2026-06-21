@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 230" shape-rendering="geometricPrecision">
+  <defs>
+    <linearGradient id="aylith-wm" gradientUnits="userSpaceOnUse" x1="16" y1="0" x2="244" y2="0">
+      <stop offset="0" stop-color="#a8632c"/>
+      <stop offset="1" stop-color="#dd9a52"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#aylith-wm)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 216 L32 158 L46 216"/>
+    <path d="M23.32 192.80 L40.68 192.80"/>
+    <path d="M58 150 L72 176.40 L86 150"/>
+    <path d="M72 176.40 L72 216"/>
+    <path d="M98 131 L98 216 L126 216"/>
+    <path d="M138 102 L166 102"/>
+    <path d="M152 102 L152 216"/>
+    <path d="M138 216 L166 216"/>
+    <path d="M178 63 L206 63"/>
+    <path d="M192 63 L192 216"/>
+    <path d="M214 20 L214 216"/>
+    <path d="M242 20 L242 216"/>
+    <path d="M214 118 L242 118"/>
+  </g>
+  <path fill="#c97a3a" d="M52 4 L64 44 L104 56 L64 68 L52 108 L40 68 L0 56 L40 44 Z"/>
+  <path fill="#c97a3a" d="M108 14 L113 31 L130 36 L113 41 L108 58 L103 41 L86 36 L103 31 Z"/>
+  <path fill="#c97a3a" d="M72 118 L74.8 127.2 L84 130 L74.8 132.8 L72 142 L69.2 132.8 L60 130 L69.2 127.2 Z"/>
+</svg>

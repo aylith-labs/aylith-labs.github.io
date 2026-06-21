@@ -75,6 +75,25 @@ explorer.exe /select,"$(wslpath -w ~/.cache/pr-uploads/aylith-org-avatar-500.png
 ```
 Target: `github.com/organizations/aylith-labs/settings/profile` (PNG/GIF/JPG only).
 
+## The lettermark (letters-as-bars wordmark)
+
+A **separate brand logo** (brand kit / social / hero) — it does NOT replace the Space Grotesk
+`A Y L I T H` wordmark or the Sacred Wordmark Rule. Files: `landing/static/brand/lettermark.svg`
+(self-contained) + `lettermark.png` (transparent, ~1200w). viewBox `0 0 256 230`.
+
+- The six letters A Y L I T H are monoline glyphs that climb like bars (steeper parabolic rise):
+  baseline `BY=216`, half-width `W=14`, stroke 16, round cap + round join. Tops (accelerating):
+  A 158, Y 150, L 131, I 102, T 63, H 20; x-centers 32/72/112/152/192/228. Glyph builder is the
+  `glyph(ch,cx,top)` switch in `genwm.mjs` next to this skill (the single source for the geometry).
+- Fill: a **single mid-tone gradient** (`linearGradient`, `gradientUnits="userSpaceOnUse"`,
+  `x1=16 x2=244`) from `#a8632c` (left) to `#dd9a52` (right). One fixed gradient, both themes.
+- Sparkles: **copper `#c97a3a`** (same accent as the icon), an icon-style cluster in the open
+  top-left plus a tittle above the Y so it reads like a dotted "i" — `star`s at
+  `(52,56,52,12)` big, `(108,36,22,5)` medium, `(72,130,12,2.8)` Y-dot.
+- Regenerate: edit `.claude/skills/aylith-brand-mark/genwm.mjs`, then
+  `node .claude/skills/aylith-brand-mark/genwm.mjs > landing/static/brand/lettermark.svg`, then the
+  Chromium transparent-PNG recipe above (width 1200, height `round(1200*230/256)`).
+
 ## The name backstory — four readings
 Aylith carries four readings at once (mirror the `/design` `markReadings` pattern). Voice rules
 (see `landing/PRODUCT.md` + `landing/DESIGN.md`): short declaratives, heavy periods, **no
