@@ -49,7 +49,13 @@ echo "${#REPOS[@]} eligible repos."
 for repo in "${REPOS[@]}"; do
   full="$ORG/$repo"
   # Look up an existing file's sha so we update-in-place rather than 422.
-  sha="$(gh api "repos/$full/contents/$WORKFLOW_PATH" --jq '.sha' 2>/dev/null || true)"
+  # Gate on gh's exit code: on 404 gh dumps the error body to stdout and skips
+  # --jq, so only trust the output when the call actually succeeded.
+  if sha="$(gh api "repos/$full/contents/$WORKFLOW_PATH" --jq '.sha' 2>/dev/null)"; then
+    :
+  else
+    sha=""
+  fi
 
   if [[ "$DRY_RUN" == "1" ]]; then
     if [[ -n "$sha" ]]; then
