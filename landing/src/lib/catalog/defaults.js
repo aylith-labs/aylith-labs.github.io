@@ -7,7 +7,7 @@ export const ORG = 'aylith-labs';
 // The site repo itself is always skipped; other non-product repos opt out by
 // carrying this GitHub topic.
 export const SELF_REPO = 'aylith-com';
-export const EXCLUDE_TOPIC = 'aylith-no-catalog';
+export const EXCLUDE_TOPIC = 'aylith-meta';
 
 // Applied when a manifest omits the curation fields, or for placeholder repos.
 export const DEFAULT_ICON =

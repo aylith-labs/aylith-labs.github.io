@@ -12,7 +12,7 @@ set -euo pipefail
 
 ORG="aylith-labs"
 SELF_REPO="aylith-com"
-EXCLUDE_TOPIC="aylith-no-catalog"
+EXCLUDE_TOPIC="aylith-meta"
 WORKFLOW_PATH=".github/workflows/notify-catalog.yml"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
